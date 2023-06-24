@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Portfolio . Hichem Cherifi</title>
+ <link rel="stylesheet"  href="Css/StyleP.css">
+ <link rel="stylesheet"  href="Css/navbar.css">
+ <link rel="stylesheet"  href="Css/responsive.css">
+
+ <script src="https://kit.fontawesome.com/970a8ed202.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+ <header>
+  <div class="navbar" id="myTopnav">
+   <h2 class="logo">hichem <span>cherifi</span></h2>
+   <u1>
+   <li> <a  href="#home" onclick="active(this)"><i class="fa fa-fw fa-home" id="navbar"></i> home</a></li>
+   <li> <a href="#about" id="me" onclick="active(this)" ><i class="fa-solid fa-circle-info" id="navbar"></i> about me</a></li>
+   <li><a href="#talents"  onmouseout="hide()" onclick="active(this)" onmouseover="display()" id="btn_talents"><i class="fa-solid fa-star" id="navbar"></i> talents</a>
+    <ul id="drop" onmouseout="hide()"  onmouseover="display()" class="dropdown-menu">
+      <li><a href="#language">my language</a></li>
+      <li><a href="#photos">my photo</a></li>
+      <li><a href="#">my prject</a></li>
+    </ul>
+  </li> 
+   <li> <a href="#contact" onclick="active(this)"><i class="fa fa-fw fa-envelope" id="navbar"></i> contact</a></li>
+ <a href="javascript:void(0);" class="icon" onclick="navbar()">
+     <i class="fa fa-bars"></i></a>
+   </u1>
+ </div>
+ </header>
+<div class="container">
+   <!----------------------------Home----------------------------------->
+  <section class="home" id="home">
+
+          <div class="descrp">
+            <div class="animated-text">
+            <h2 >Hy </h2>
+            <p>I'm <span class="prenom">Cherifi</span><br>
+            Hichem Abdessamed</p> 
+            <p>And Welcom to My </p> 
+            <p>Port<span class="prenom">Folio</span></p>
+             <div class="btn"><a href="javascript:void(0);" onclick="about(), location.href='#about';"><i class="fa-sharp fa-solid fa-arrow-right fa-beat-fade"></i></a></div>
+            </div>
+            </div>
+          
+  </section>
+  <!---------------------------about me---------------------------->
+  <section class="about" id="about">
+    <div class="generale"><h3>About Me</h3></div>
+   <!-----------part1----------------->
+   <div class="image1">
+    <img src="img/me.jpg" width="300" height="300">
+  </div>
+    <div class="part1">
+      <div class="title">Who Am I ?</div>
+      <p class="text">I'm hichem Abdessamed cherifi , I live in sidi bel abbes . algeria , And im Web Devlopper and Photographer . </p>
+    </div>
+
+     <!----------part2----------------->
+     <div class="image2">
+      <img src="img/help.png" width="300" height="300">
+     </div>
+   <div class="part2">
+    <div class="title">What can I help You ?</div>
+    <p class="text">If you need any help of your <strong> web site </strong> or you need a new web site for you or your Busniess ! and if yu need take a picture of you or some Art o anything else im here you can discover more click here </p>
+    <div class="btn"><a href=""><i class="fa-sharp fa-solid fa-arrow-right fa-beat-fade"></i></a></div>
+   </div>
+
+  </section>
+  <!-----------------------talents------------------------------->
+  <section class="talents" id="talents">
+    <div class="generale"><h3>My Talents</h3></div>
+    <div class="inroduction">
+      <p> Welcom to my talents here you will descover all my talents :)  </p>
+      <p> for me i have some talents in computer science and some picture, I hope you like it</p>   
+    </div>
+    <div class="mytalents" id="language">
+      <div class="language">
+        <div class="title">language of web</div>
+        <div class="container2">
+          <span class="texte">html & css :</span>
+
+          <div class="circular-progress">
+              <span class="progress-value">0%</span>
+          </div>
+          <span class="texte">javascript & jquery :</span>
+
+          <div class="circular-progress">
+              <span class="progress-value">0%</span>
+          </div>
+          <span class="texte">php & ajax :</span>
+
+          <div class="circular-progress">
+              <span class="progress-value">0%</span>
+          </div>
+
+      </div>
+      </div>
+      <div class="language">
+        <div class="title">language of dev</div>
+        <div class="container2">
+          <span class="texte">java :</span>
+
+          <div class="circular-progress">
+              <span class="progress-value">0%</span>
+          </div>
+          <span class="texte">C :</span>
+
+          <div class="circular-progress">
+              <span class="progress-value">0%</span>
+          </div>
+          <span class="texte">python :</span>
+
+          <div class="circular-progress">
+              <span class="progress-value">0%</span>
+          </div>
+
+        </div> 
+
+      </div>
+      <div class="language">
+        <div class="title">language</div>
+        <div class="container2">
+          <span class="texte">arabic :</span>
+          <div class="progress-bar">
+            <div class="progress-bar-inner"></div>
+          </div>
+
+          <span class="texte">french :</span>
+          <div class="progress-bar">
+            <div class="progress-bar-inner"></div>
+          </div>
+
+          <span class="texte">english :</span>
+          <div class="progress-bar">
+            <div class="progress-bar-inner"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>  
+    <div class="myphoto" id="photos">
+      <div class="title2"> My project/photos</div>
+      <div class="inroduction">
+        <p>here you will discover my project (web // Photography )</p>
+      </div>
+      <div class="container3">
+        <div class="mySlides fade">
+          <img class="imge" src="img/img (1).jpg" style="height: 100;width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img class="imge" src="img/img (2).jpg" style="height: 100;width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img class="imge" src="img/img (3).jpg" style="height: 100;width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <img class="imge" src="img/img (4).jpg" style="height: 100;width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <img class="imge" src="img/img (5).jpg" style="height: 100;width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <img class="imge" src="img/img (6).jpg" style="height: 100;width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <img class="imge" src="img/img (7).jpg" style="height: 100;width:100%">
+        </div>
+        <div class="titlee"> My Photography</div>
+      </div>
+    </div>
+  </section>
+  <!-----------------------contact------------------------------->
+ <section class="contact" id="contact">
+  <div class="generale"><h3>contact me</h3></div>
+  <div class="inroduction">
+    <p>here you can contact us for anything or need photo or project</p>
+  </div>
+ <div class="content_us">
+        <div class="left-side">
+          <div class="address details">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="topic">Address</div>
+            <div class="text-one">telagh,sidi bel abbes , algeria</div>
+          </div>
+          <div class="phone details">
+            <i class="fas fa-phone-alt"></i>
+            <div class="topic">Phone</div>
+            <div class="text-one">0672595595</div>
+          </div>
+          <div class="email details">
+            <i class="fas fa-envelope"></i>
+            <div class="topic">Email</div>
+            <div class="text-one">Hichem.dz222002@gmail.com</div>
+          </div>
+        </div>
+        <div class="right-side">
+          <form  action="contact_us.php" method="POST" >
+            <div class="input-box">
+              <input type="text" name="Fname_us" placeholder="Enter your name" />
+            </div>
+            <div class="input-box">
+              <input type="email" name="email_us" placeholder="Enter your email" />
+            </div>
+            <div class="input-box message-box">
+              <textarea name="message_us" placeholder="Enter your message"></textarea>
+            </div>
+            <div class="button">
+              <input type="submit" name="send_us" value="Send Now" />
+            </div>
+          </form>
+        </div>
+      </div>
+
+
+
+      <div class="wrapper">
+    <div class="button">
+       <div class="icon">
+       <a href="">
+          <i class="fab fa-facebook-f"></i></a>
+       </div>
+       <span>Facebook</span>
+    </div>
+    <div class="button">
+       <div class="icon">
+        <a href="">
+          <i class="fab fa-twitter"></i></a>
+       </div>
+       <span>Twitter</span>
+    </div>
+    <div class="button">
+       <div class="icon">
+        <a href="">
+          <i class="fab fa-instagram"></i></a>
+       </div>
+       <span>Instagram</span>
+    </div>
+    <div class="button">
+       <div class="icon">
+       <a href="">
+          <i class="fab fa-github"></i></a>
+       </div>
+       <span>Github</span>
+    </div>
+ </div>  
+</div>
+
+ </section>
+ 
+</div>
+</body>
+</html>
+<script src="js/script.js"></script>
+
+<script>
+ function navbar() {
+  var navbar = document.getElementById('myTopnav');
+  var responsive_class_name = 'responsive'
+  navbar.classList.toggle(responsive_class_name)
+}
+function about(){
+  var about = document.getElementById('about');
+  var me = document.getElementById('me');
+  about.style.display='block';
+ // me.style.display='inline-block';
+}
+function display(){
+  var talents = document.getElementById('drop');
+  talents.style.display='block';
+}
+function hide(){
+  var talents = document.getElementById('drop');
+  talents.style.display='none';
+}
+var part1 = document.querySelector('.part1');
+  var part2 = document.querySelector('.part2');
+  var image1 = document.querySelector('.image1');
+  var image2 = document.querySelector('.image2');
+document.addEventListener('DOMContentLoaded', function() {
+  var textAnimation = document.querySelector('.descrp');
+  textAnimation.classList.add('animate');
+ part1.classList.add('animate');
+  part2.classList.add('animate');
+  image1.classList.add('animate');
+  image2.classList.add('animate');
+});
+var aboute = document.getElementById("about");
+
+function isElementInViewport(element) {
+  var rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+function handleScroll() {
+  if (isElementInViewport(aboute)) {
+    part1.classList.add('animate');
+  part2.classList.add('animate');
+  image1.classList.add('animate');
+  image2.classList.add('animate');  }
+}
+window.addEventListener('scroll', handleScroll);
+
+  </script>
